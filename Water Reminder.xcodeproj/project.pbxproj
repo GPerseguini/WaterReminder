@@ -13,6 +13,7 @@
 		FEC75EF42880BB450074BFEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC75EF32880BB450074BFEE /* Preview Assets.xcassets */; };
 		FEC75EF62880BB450074BFEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EF52880BB450074BFEE /* Persistence.swift */; };
 		FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EF72880BB450074BFEE /* Water_Reminder.xcdatamodeld */; };
+		FEC75F002880BD810074BFEE /* WaterRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EFF2880BD810074BFEE /* WaterRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FEC75EF32880BB450074BFEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEC75EF52880BB450074BFEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FEC75EF82880BB450074BFEE /* Water_Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Water_Reminder.xcdatamodel; sourceTree = "<group>"; };
+		FEC75EFF2880BD810074BFEE /* WaterRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		FEC75EEB2880BB3E0074BFEE /* Water Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				FEC75F012880CB320074BFEE /* View */,
 				FEC75EEC2880BB3E0074BFEE /* Water_ReminderApp.swift */,
 				FEC75EEE2880BB3E0074BFEE /* ContentView.swift */,
 				FEC75EF02880BB450074BFEE /* Assets.xcassets */,
@@ -71,6 +74,14 @@
 				FEC75EF32880BB450074BFEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEC75F012880CB320074BFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEC75EFF2880BD810074BFEE /* WaterRing.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 				FEC75EEF2880BB3E0074BFEE /* ContentView.swift in Sources */,
 				FEC75EED2880BB3E0074BFEE /* Water_ReminderApp.swift in Sources */,
 				FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */,
+				FEC75F002880BD810074BFEE /* WaterRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
