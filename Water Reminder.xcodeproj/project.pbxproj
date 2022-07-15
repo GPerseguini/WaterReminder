@@ -14,6 +14,8 @@
 		FEC75EF62880BB450074BFEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EF52880BB450074BFEE /* Persistence.swift */; };
 		FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EF72880BB450074BFEE /* Water_Reminder.xcdatamodeld */; };
 		FEC75F002880BD810074BFEE /* WaterRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EFF2880BD810074BFEE /* WaterRing.swift */; };
+		FEC75F03288213080074BFEE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75F02288213080074BFEE /* Button.swift */; };
+		FEC75F06288218900074BFEE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75F05288218900074BFEE /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FEC75EF52880BB450074BFEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FEC75EF82880BB450074BFEE /* Water_Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Water_Reminder.xcdatamodel; sourceTree = "<group>"; };
 		FEC75EFF2880BD810074BFEE /* WaterRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRing.swift; sourceTree = "<group>"; };
+		FEC75F02288213080074BFEE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FEC75F05288218900074BFEE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				FEC75EFF2880BD810074BFEE /* WaterRing.swift */,
+				FEC75F02288213080074BFEE /* Button.swift */,
+				FEC75F05288218900074BFEE /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC75F06288218900074BFEE /* TestView.swift in Sources */,
 				FEC75EF62880BB450074BFEE /* Persistence.swift in Sources */,
+				FEC75F03288213080074BFEE /* Button.swift in Sources */,
 				FEC75EEF2880BB3E0074BFEE /* ContentView.swift in Sources */,
 				FEC75EED2880BB3E0074BFEE /* Water_ReminderApp.swift in Sources */,
 				FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */,

@@ -40,25 +40,13 @@ struct WaterReminder: View {
             }
         }
         
-        /* //Código Botão
-        Button(action: {
-            print("Clicked")
-        }){
-            Text("Tomar água")
-                .foregroundColor(.blue)
-                .font(.title)
-                .padding()
-                .border(Color.white, width: 5)
-        }
-         */
-        
     }
     
     func onDrag(value: DragGesture.Value) {
         let  radianVector = CGVector(dx: value.location.x , dy: value.location.y)
         let radian = atan2(radianVector.dy - 20, radianVector.dx - 20)
         var angleValue = radian * 180 / .pi
-        
+
         // Se atingir 100%, ele deve resetar
         if (angleValue < 0) {
             angleValue = 360 + angleValue
