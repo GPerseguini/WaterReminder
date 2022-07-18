@@ -9,13 +9,13 @@ import SwiftUI
 
 
 struct TestView: View {
-    @State var ab = WaterReminder()
+    //@State var ab = WaterRing()
     
     var body: some View {
 
         
         VStack{
-            WaterReminder()
+            WaterRing()
             ButtonWater().padding(60)
         }
 

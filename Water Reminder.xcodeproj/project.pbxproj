@@ -16,6 +16,7 @@
 		FEC75F002880BD810074BFEE /* WaterRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EFF2880BD810074BFEE /* WaterRing.swift */; };
 		FEC75F03288213080074BFEE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75F02288213080074BFEE /* Button.swift */; };
 		FEC75F06288218900074BFEE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75F05288218900074BFEE /* TestView.swift */; };
+		FEC75F0B288620BC0074BFEE /* ModelView WaterRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75F0A288620BC0074BFEE /* ModelView WaterRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FEC75EFF2880BD810074BFEE /* WaterRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRing.swift; sourceTree = "<group>"; };
 		FEC75F02288213080074BFEE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FEC75F05288218900074BFEE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		FEC75F0A288620BC0074BFEE /* ModelView WaterRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelView WaterRing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		FEC75EEB2880BB3E0074BFEE /* Water Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				FEC75F092886146B0074BFEE /* ModelView */,
 				FEC75F012880CB320074BFEE /* View */,
 				FEC75EEC2880BB3E0074BFEE /* Water_ReminderApp.swift */,
 				FEC75EEE2880BB3E0074BFEE /* ContentView.swift */,
@@ -88,6 +91,14 @@
 				FEC75F05288218900074BFEE /* TestView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FEC75F092886146B0074BFEE /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				FEC75F0A288620BC0074BFEE /* ModelView WaterRing.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				FEC75F06288218900074BFEE /* TestView.swift in Sources */,
 				FEC75EF62880BB450074BFEE /* Persistence.swift in Sources */,
 				FEC75F03288213080074BFEE /* Button.swift in Sources */,
+				FEC75F0B288620BC0074BFEE /* ModelView WaterRing.swift in Sources */,
 				FEC75EEF2880BB3E0074BFEE /* ContentView.swift in Sources */,
 				FEC75EED2880BB3E0074BFEE /* Water_ReminderApp.swift in Sources */,
 				FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */,
