@@ -9,16 +9,22 @@ import SwiftUI
 
 
 struct TestView: View {
-    //@State var ab = WaterRing()
+    @State var frameSize = UIScreen.main.bounds.width - 120
+    var testLabel = Label("200ML",systemImage: "drop.fill")
     
     var body: some View {
 
         
         VStack{
-            WaterRing()
+            ZStack{
+                WaterRing()
+                    testLabel
+                        .font(.system(size:26))
+                        .frame(width: frameSize,  height: frameSize)
+            }
             ButtonWater().padding(60)
         }
-
+        
     }
 }
 
