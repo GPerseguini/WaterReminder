@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TestView: View {
     @State var frameSize = UIScreen.main.bounds.width - 120
-    var testLabel = Label("200ML",systemImage: "drop.fill")
+    var testLabel = Label("200ml",systemImage: "drop.fill")
     
     var body: some View {
 
@@ -31,7 +31,10 @@ struct TestView: View {
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
-            .preferredColorScheme(.dark)
+        Group {
+
+            TestView()
+                .preferredColorScheme(.dark)
+        }
     }
 }

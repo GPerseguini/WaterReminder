@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ButtonWater: View {
+    
+   @ObservedObject private var viewModel = ViewModel()
+    
     var body: some View {
         VStack {
             Button(action: {
-                print("Clicked")
+                print(viewModel.onClick())
                 
             }) {
                 HStack {

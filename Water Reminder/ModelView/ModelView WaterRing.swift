@@ -8,7 +8,7 @@
 import SwiftUI
 
 //MODEL VIEW
-extension WaterRing {
+//extension WaterRing {
     @MainActor class ViewModel: ObservableObject {
         
         @Published var current: CGFloat = 0
@@ -30,6 +30,11 @@ extension WaterRing {
                 self.value = Double(angleValue)
             }
         }
+        
+        func onClick () -> String {
+            self.value = self.value + 100
+            return String(self.value)
+        }
     }
     
-}
+//}

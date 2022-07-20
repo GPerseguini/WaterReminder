@@ -36,11 +36,12 @@ struct WaterRing: View {
                     .offset(x: frameSize/2).rotationEffect(.init(degrees: viewModel.value))
                     .gesture(DragGesture().onChanged(viewModel.onDrag(value: )))
                     .rotationEffect(.init(degrees: -90))
+                
 
             }
         }
-        
     }
+            
     
 //    func onDrag(value: DragGesture.Value) {
 //        let  radianVector = CGVector(dx: value.location.x , dy: value.location.y)
@@ -61,11 +62,39 @@ struct WaterRing: View {
     
 }
 
+//struct ButtonWater: View {
+//
+//    private var viewModel = WaterRing()
+//
+//    var body: some View {
+//                
+//        VStack {
+//                    Button(action: {
+//                        WaterRing.onClick()
+//
+//                    }) {
+//                        HStack {
+//                            Image(systemName: "water")
+//                                .font(.title)
+//                            Text("Water it")
+//                                .fontWeight(.semibold)
+//                                .font(.title)
+//                        }
+//                        .padding()
+//                        .foregroundColor(Color.white)
+//                        .background(Color.blue)
+//                        .cornerRadius(40)
+//                    }.padding(10)
+//                }
+//
+//            }
+//}
+        
+
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             WaterRing().preferredColorScheme(.dark)
-            WaterRing().previewLayout(.fixed(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)).preferredColorScheme(.dark).previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }
