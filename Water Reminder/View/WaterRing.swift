@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WaterRing: View {
     @State var frameSize = UIScreen.main.bounds.width - 120
-    @StateObject private var viewModel = ViewModel()
+    @EnvironmentObject var viewModel : ViewModel
     
     
     var body: some View {
@@ -38,8 +38,11 @@ struct WaterRing: View {
                     .rotationEffect(.init(degrees: -90))
                 
 
+                
+
             }
         }
+        .environmentObject(viewModel)
     }
             
     

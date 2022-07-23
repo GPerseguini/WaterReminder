@@ -9,7 +9,7 @@ import SwiftUI
 
 //MODEL VIEW
 //extension WaterRing {
-    @MainActor class ViewModel: ObservableObject {
+    class ViewModel: ObservableObject {
         
         @Published var current: CGFloat = 0
         @Published var value: Double = 0
@@ -28,12 +28,13 @@ import SwiftUI
                 let current = angleValue / 360
                 self.current = current
                 self.value = Double(angleValue)
+               // print(String(format:  "%.3f", Double(self.current)))
+               // print(String(self.value))
             }
         }
         
         func onClick () -> String {
-            self.value = self.value + 100
-            return String(self.value)
+            return  (String(self.value))
         }
     }
     

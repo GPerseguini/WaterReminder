@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ButtonWater: View {
     
-   @ObservedObject private var viewModel = ViewModel()
+    @EnvironmentObject var viewModel : ViewModel
     
     var body: some View {
         VStack {
             Button(action: {
-                print(viewModel.onClick())
+                print(viewModel.value)
                 
             }) {
                 HStack {
@@ -30,7 +30,11 @@ struct ButtonWater: View {
                 .cornerRadius(40)
             }.padding(10)
         }
+        .environmentObject(viewModel)
+
     }
+
+
 }
 
 struct Button_Previews: PreviewProvider {
