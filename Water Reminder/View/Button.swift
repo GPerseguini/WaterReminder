@@ -14,7 +14,9 @@ struct ButtonWater: View {
     var body: some View {
         VStack {
             Button(action: {
-                print(viewModel.value)
+               // print(viewModel.value)
+                print(viewModel.onClick())
+               // print(viewModel.showOnCircle())
                 
             }) {
                 HStack {

@@ -28,14 +28,27 @@ import SwiftUI
                 let current = angleValue / 360
                 self.current = current
                 self.value = Double(angleValue)
-               // print(String(format:  "%.3f", Double(self.current)))
-               // print(String(self.value))
             }
         }
         
         func onClick () -> String {
-            return  (String(self.value))
+            var convert = self.value/360 * 100
+            return  (String(convert))
         }
+        
+        func showOnCircle() {
+            var userInput : Double = 100
+            let userObjective  : Double = 200
+            if (userInput < 0) {
+                userInput = 360 + userInput
+            }
+            withAnimation(Animation.linear(duration: 0.25)){
+            self.value = userInput/userObjective * 360
+            self.current = self.value / 360
+            }
+        }
+        
+
     }
     
 //}
