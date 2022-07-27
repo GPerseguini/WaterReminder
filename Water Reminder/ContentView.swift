@@ -11,8 +11,9 @@ import CoreData
 
 struct  ContentView: View {
     @State var frameSize = UIScreen.main.bounds.width - 120
-    var testLabel = Label("200ml",systemImage: "drop.fill")
     @StateObject private var viewModel = ViewModel()
+    var testLabel = Label("200ml",systemImage: "drop.fill")
+    @State var input: String = "1"
     
     var body: some View {
 
@@ -20,9 +21,20 @@ struct  ContentView: View {
         VStack{
             ZStack{
                 WaterRing()
-                    testLabel
-                        .font(.system(size:26))
-                        .frame(width: frameSize,  height: frameSize)
+//                    testLabel
+//                        .font(.system(size:26))
+//                        .frame(width: frameSize,  height: frameSize)
+                TextField("100ml", text: $input)
+                    .foregroundColor(Color.white)
+                    .frame(width: frameSize-80,  height: frameSize-20, alignment: .center)
+                    .font(.system(size:45))
+                    .multilineTextAlignment(.center)
+                    .onChange(of: input){
+                        newValue in viewModel.showOnCircle(userInput: Double(input))
+                    }
+
+                    
+                
             }
             ButtonWater().padding(60)
             Text("\(viewModel.value)")

@@ -32,18 +32,23 @@ import SwiftUI
         }
         
         func onClick () -> String {
-            var convert = self.value/360 * 100
-            return  (String(convert))
+            var aux = self.current * 200
+            return String(format: "%.0f", Double(aux))
+            //return  (String(convert))
         }
         
-        func showOnCircle() {
-            var userInput : Double = 100
+        func showOnCircle(userInput: Double?) {
+            guard var unwrapped = userInput else{
+                self.value = 0
+                self.current = 0
+                return
+            }
             let userObjective  : Double = 200
-            if (userInput < 0) {
-                userInput = 360 + userInput
+            if (  unwrapped < 0) {
+                unwrapped = 360 +  unwrapped
             }
             withAnimation(Animation.linear(duration: 0.25)){
-            self.value = userInput/userObjective * 360
+            self.value =  unwrapped/userObjective * 360
             self.current = self.value / 360
             }
         }
