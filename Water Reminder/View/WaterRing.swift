@@ -10,6 +10,7 @@ import SwiftUI
 struct WaterRing: View {
     @State var frameSize = UIScreen.main.bounds.width - 120
     @EnvironmentObject var viewModel : ViewModel
+    @State var input: String = "1"
     
     
     var body: some View {
@@ -36,63 +37,32 @@ struct WaterRing: View {
                     .offset(x: frameSize/2).rotationEffect(.init(degrees: viewModel.value))
                     .gesture(DragGesture().onChanged(viewModel.onDrag(value: )))
                     .rotationEffect(.init(degrees: -90))
+                    .onChange(of: viewModel.value) {
+                        newValue in viewModel.showOnTextField(userInput: viewModel.value)
+                    }
                 
-
+                TextField("100ml", text: $viewModel.input)
+                    .foregroundColor(Color.white)
+                    .frame(width: frameSize-80,  height: frameSize-20, alignment: .center)
+                    .font(.system(size:45))
+                    .multilineTextAlignment(.center)
+                    .onChange(of: input){
+                        newValue in viewModel.showOnCircle(userInput: Double(viewModel.input))
+                    }
                 
 
             }
         }
         .environmentObject(viewModel)
     }
-            
     
-//    func onDrag(value: DragGesture.Value) {
-//        let  radianVector = CGVector(dx: value.location.x , dy: value.location.y)
-//        let radian = atan2(radianVector.dy - 20, radianVector.dx - 20)
-//        var angleValue = radian * 180 / .pi
-//
-//        // Se atingir 100%, ele deve resetar
-//        if (angleValue < 0) {
-//            angleValue = 360 + angleValue
-//        }
-//
-//        withAnimation(Animation.linear(duration: 0.25)) {
-//            let  current = angleValue / 360
-//            self.current = current
-//            self.value = Double(angleValue)
-//        }
-//    }
+
+            
+
     
 }
 
-//struct ButtonWater: View {
-//
-//    private var viewModel = WaterRing()
-//
-//    var body: some View {
-//                
-//        VStack {
-//                    Button(action: {
-//                        WaterRing.onClick()
-//
-//                    }) {
-//                        HStack {
-//                            Image(systemName: "water")
-//                                .font(.title)
-//                            Text("Water it")
-//                                .fontWeight(.semibold)
-//                                .font(.title)
-//                        }
-//                        .padding()
-//                        .foregroundColor(Color.white)
-//                        .background(Color.blue)
-//                        .cornerRadius(40)
-//                    }.padding(10)
-//                }
-//
-//            }
-//}
-        
+
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {

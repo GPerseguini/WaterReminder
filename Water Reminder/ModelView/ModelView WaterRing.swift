@@ -13,6 +13,7 @@ import SwiftUI
         
         @Published var current: CGFloat = 0
         @Published var value: Double = 0
+        @Published var input: String = "1"
         
         func onDrag(value: DragGesture.Value) {
             let  radianVector = CGVector(dx: value.location.x , dy: value.location.y)
@@ -51,6 +52,11 @@ import SwiftUI
             self.value =  unwrapped/userObjective * 360
             self.current = self.value / 360
             }
+        }
+        
+        func showOnTextField (userInput: Double){
+            let aux = String(format: "%.0f", Double(self.current * 200))
+            input = String(aux+"ml")
         }
         
 

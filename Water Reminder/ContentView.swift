@@ -16,22 +16,21 @@ struct  ContentView: View {
     @State var input: String = "1"
     
     var body: some View {
-
-        
         VStack{
             ZStack{
                 WaterRing()
 //                    testLabel
 //                        .font(.system(size:26))
 //                        .frame(width: frameSize,  height: frameSize)
-                TextField("100ml", text: $input)
-                    .foregroundColor(Color.white)
-                    .frame(width: frameSize-80,  height: frameSize-20, alignment: .center)
-                    .font(.system(size:45))
-                    .multilineTextAlignment(.center)
-                    .onChange(of: input){
-                        newValue in viewModel.showOnCircle(userInput: Double(input))
-                    }
+//                TextField("100ml", text: $input)
+//                    .foregroundColor(Color.white)
+//                    .frame(width: frameSize-80,  height: frameSize-20, alignment: .center)
+//                    .font(.system(size:45))
+//                    .multilineTextAlignment(.center)
+//                    .onChange(of: input){
+//                        newValue in viewModel.showOnCircle(userInput: Double(input))
+//                    }
+
 
                     
                 
