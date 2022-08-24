@@ -41,7 +41,8 @@ struct ButtonWater: View {
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonWater()
-            .preferredColorScheme(.dark)
+        Group {
+        ButtonWater().preferredColorScheme(.dark)
+        }
     }
 }

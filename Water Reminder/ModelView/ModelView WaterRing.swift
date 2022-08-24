@@ -56,7 +56,8 @@ import SwiftUI
         
         func showOnTextField (userInput: Double){
             let aux = String(format: "%.0f", Double(self.current * 200))
-            input = String(aux+"ml")
+            //input = String( "\(aux)ml")
+            input = String(aux)
         }
         
 
