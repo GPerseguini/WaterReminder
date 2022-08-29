@@ -14,6 +14,8 @@ import SwiftUI
         @Published var current: CGFloat = 0
         @Published var value: Double = 0
         @Published var input: String = "1"
+       // var private textValue = 0
+        
         
         func onDrag(value: DragGesture.Value) {
             let  radianVector = CGVector(dx: value.location.x , dy: value.location.y)
@@ -52,6 +54,23 @@ import SwiftUI
             self.value =  unwrapped/userObjective * 360
             self.current = self.value / 360
             }
+            
+            // Para fazer utilizando sufixo ML, não esquecer de alterar o parametro na classe WaterRing para String
+//            guard var unwrapped = userInput else{
+//                self.value = 0
+//                self.current = 0
+//                return
+//            }
+//            var aux = unwrapped.split(separator: "m")
+//            var aux2 = Double(aux[0])
+//            let userObjective  : Double = 200
+//            if (  aux2! < 0) {
+//                aux2! = 360 +  aux2!
+//            }
+//            withAnimation(Animation.linear(duration: 0.25)){
+//            self.value =  (aux2!) / userObjective * 360
+//            self.current = self.value / 360
+//            }
         }
         
         func showOnTextField (userInput: Double){

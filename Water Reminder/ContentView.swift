@@ -18,7 +18,8 @@ struct  ContentView: View {
     var body: some View {
         VStack{
             ZStack{
-                WaterRing()
+            
+ //               WaterRing()
 //                    testLabel
 //                        .font(.system(size:26))
 //                        .frame(width: frameSize,  height: frameSize)
@@ -35,8 +36,9 @@ struct  ContentView: View {
                     
                 
             }
-            ButtonWater().padding(60)
-            Text("\(viewModel.value)")
+ //           ButtonWater().padding(16)
+          //  Text("\(viewModel.value)")
+            BottomMenu()
         }
         .preferredColorScheme(.dark)
         .environmentObject(viewModel)

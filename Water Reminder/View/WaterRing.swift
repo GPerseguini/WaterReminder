@@ -41,7 +41,8 @@ struct WaterRing: View {
                         newValue in viewModel.showOnTextField(userInput: viewModel.value)
                     }
                 
-                TextField("100", text: $viewModel.input)
+                TextField("", text: $viewModel.input)
+               // TextField("100", text: $viewModel.input)
                     .foregroundColor(Color.white)
                     .frame(width: frameSize-80,  height: frameSize-20, alignment: .center)
                     .font(.system(size:45))
@@ -49,9 +50,8 @@ struct WaterRing: View {
                     .onChange(of: viewModel.input){
                         newValue in viewModel.showOnCircle(userInput: Double(viewModel.input))
                     }
-                
-
-            }
+                }
+            
         }
         .environmentObject(viewModel)
     }

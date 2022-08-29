@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE9CA53928B830C700D57289 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CA53828B830C700D57289 /* BottomMenu.swift */; };
+		FE9CA53B28B8368C00D57289 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CA53A28B8368C00D57289 /* Home.swift */; };
+		FE9CA53D28BD70D900D57289 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CA53C28BD70D900D57289 /* History.swift */; };
 		FEC75EED2880BB3E0074BFEE /* Water_ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EEC2880BB3E0074BFEE /* Water_ReminderApp.swift */; };
 		FEC75EEF2880BB3E0074BFEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC75EEE2880BB3E0074BFEE /* ContentView.swift */; };
 		FEC75EF12880BB450074BFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC75EF02880BB450074BFEE /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE9CA53828B830C700D57289 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
+		FE9CA53A28B8368C00D57289 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FE9CA53C28BD70D900D57289 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		FEC75EE92880BB3E0074BFEE /* Water Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC75EEC2880BB3E0074BFEE /* Water_ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_ReminderApp.swift; sourceTree = "<group>"; };
 		FEC75EEE2880BB3E0074BFEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 			children = (
 				FEC75EFF2880BD810074BFEE /* WaterRing.swift */,
 				FEC75F02288213080074BFEE /* Button.swift */,
+				FE9CA53828B830C700D57289 /* BottomMenu.swift */,
+				FE9CA53A28B8368C00D57289 /* Home.swift */,
+				FE9CA53C28BD70D900D57289 /* History.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,7 +181,10 @@
 				FEC75F03288213080074BFEE /* Button.swift in Sources */,
 				FEC75F0B288620BC0074BFEE /* ModelView WaterRing.swift in Sources */,
 				FEC75EEF2880BB3E0074BFEE /* ContentView.swift in Sources */,
+				FE9CA53D28BD70D900D57289 /* History.swift in Sources */,
 				FEC75EED2880BB3E0074BFEE /* Water_ReminderApp.swift in Sources */,
+				FE9CA53B28B8368C00D57289 /* Home.swift in Sources */,
+				FE9CA53928B830C700D57289 /* BottomMenu.swift in Sources */,
 				FEC75EF92880BB450074BFEE /* Water_Reminder.xcdatamodeld in Sources */,
 				FEC75F002880BD810074BFEE /* WaterRing.swift in Sources */,
 			);
